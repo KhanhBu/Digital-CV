@@ -1,0 +1,80 @@
+@media screen and (max-width: 550px) {
+  .nav-container {
+    display: block;
+  }
+
+  .personal-container {
+    display: block;
+  }
+
+  .job-container {
+    display: block;
+  }
+
+  .job-item-container-1,
+  .job-item-container-2,
+  .job-item-container-3,
+  .job-item-container-4,
+  .job-item-container-5,
+  .job-item-container-6 {
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+
+  .certificate-container {
+    display: block;
+  }
+
+  .certificate-title {
+    margin-bottom: 30px;
+  }
+
+  .cert {
+    text-align: center;
+  }
+
+  .certificate-container img {
+    width: 75%;
+  }
+
+  .Pyt-cert::before {
+    display: none;
+  }
+
+  .WEB-cert,
+  .Pyt-cert {
+    border: none;
+  }
+
+  .project-container {
+    display: block;
+  }
+
+  .icon-flex-container {
+    display: block;
+  }
+
+  .icon-flex-container i,
+  .icon-flex-container p {
+    margin: 10px auto 20px 20px;
+  }
+
+  .icon-div {
+    margin-bottom: 20px;
+  }
+
+  .footer-list li {
+    margin: 35px 0;
+    display: block;
+  }
+
+  .icon-linkedin {
+    margin-left: -14px;
+  }
+
+  .icon-github-circled {
+    margin-left: -40px;
+    margin-right: -10px;
+  }
+}

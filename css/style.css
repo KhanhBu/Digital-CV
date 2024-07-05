@@ -1,0 +1,700 @@
+* {
+  margin: 0px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+body {
+  font-family: Arial;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+/* Banner */
+.banner-container {
+  position: relative;
+}
+
+.banner-img {
+  position: relative;
+}
+
+#banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+#banner h1 {
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+/* Nav bar */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  border-bottom: 1px solid rgba(220 220 220);
+  text-transform: uppercase;
+  position: relative;
+  margin-top: -7px;
+}
+
+.nav-container i {
+  color: #199cdb;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-container a:hover {
+  cursor: pointer;
+}
+
+.nav-container a:active {
+  color: chartreuse;
+}
+
+.nav-container a:visited {
+  color: purple;
+}
+
+/* Nav-img */
+#self-img {
+  border-radius: 50%;
+  border: 2px solid #f7f7f7;
+  background-color: white;
+  padding: 5px;
+  z-index: 1;
+}
+
+.self-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Ruled nav grid */
+.nav-item {
+  position: relative;
+  padding: 15px 0;
+}
+
+.background {
+  margin-right: 150px;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  margin-left: 0px;
+  border-right: 2px solid rgb(220, 220, 220);
+  right: -26px;
+  top: 0;
+  bottom: 0;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  margin-left: 0px;
+  top: 0;
+  bottom: 0;
+  border-left: 2px solid rgb(220, 220, 220);
+  left: -26px;
+}
+
+/* Thông tin cá nhân */
+.personal-container {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  background-color: white;
+}
+
+#target {
+  background-color: #f7f7f7;
+  justify-content: start;
+  padding: 50px;
+  padding-top: 100px;
+}
+
+#personal-info {
+  background-color: rgb(238, 238, 238);
+  justify-content: start;
+  padding: 100px 0 50px 50px;
+}
+
+.mt-40 {
+  list-style-type: none;
+}
+
+.personal-icons {
+  color: deepskyblue;
+  margin-left: -40px;
+  font-size: 20px;
+}
+
+.personal-icons i {
+  padding-right: 5px;
+}
+
+.personal-icons .icon-facebook {
+  color: #199cdb;
+  background-color: rgb(238, 238, 238);
+  border: none;
+}
+
+.personal-icons .icon-linkedin {
+  color: #199cdb;
+  background-color: rgb(238, 238, 238);
+  border: none;
+}
+
+.info-item {
+  margin-bottom: 10px;
+  margin-left: -40px;
+}
+
+/* Thông tin nghề nghiệp  */
+.job-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  justify-content: center;
+  align-items: start;
+  row-gap: 50px;
+  width: 1300px;
+  margin: 20px auto 60px auto;
+}
+
+.job-item-container-1,
+.job-item-container-2,
+.job-item-container-3,
+.job-item-container-4,
+.job-item-container-5,
+.job-item-container-6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #eeeded;
+  padding: 20px;
+}
+
+.icondiv {
+  justify-self: center;
+}
+
+.viewmore {
+  background-color: rgb(246, 246, 106);
+  border-radius: 20px;
+  border: none;
+}
+
+.job-item-container-1,
+.job-item-container-2,
+.job-item-container-6 {
+  max-height: 500px;
+  height: 100%;
+}
+
+.job-item-container-3,
+.job-item-container-4,
+.job-item-container-5 {
+  max-height: 464px;
+  height: 100%;
+}
+.job-container .list-blue::marker {
+  color: #199cdb;
+  font-size: 30px;
+}
+
+.ic-toolbox,
+.ic-pencil,
+.ic-telescope,
+.ic-mic,
+.ic-tools-2 {
+  color: #cdcdcd;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.dash {
+  list-style-type: "- ";
+  margin-left: -30px;
+}
+
+/* Kinh nghiệm  */
+
+.job-item-container-1-2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid #eeeded;
+  padding: 20px 20px 0 20px;
+  row-gap: 20px;
+}
+
+.full-row {
+  grid-column: 1 / 3;
+}
+
+.first-item {
+  justify-self: start;
+  align-self: center;
+}
+
+.ic-toolbox {
+  font-size: 40px;
+}
+
+/* Học vấn  */
+.ic-pencil {
+  font-size: 40px;
+}
+
+.list2,
+.list3,
+.div2,
+.div3 {
+  grid-column: 1 / span 2;
+}
+
+.job-item-container-2-2 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  justify-items: start;
+  align-items: center;
+  border: 2px solid #eeeded;
+  padding: 20px;
+  row-gap: 20px;
+  padding-bottom: 0;
+}
+
+.item-icon {
+  align-self: center;
+  font-size: 40px;
+}
+
+/* Hoạt động  */
+.job-item-container-6-2 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  justify-items: start;
+  align-items: center;
+  border: 2px solid #eeeded;
+  padding: 20px;
+  row-gap: 20px;
+  padding-bottom: 0;
+}
+
+/* Sở thích  */
+.job-item-container-3-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  border: 2px solid #eeeded;
+  justify-content: center;
+  align-items: center;
+  padding: 0 33px;
+  row-gap: 20px;
+  padding-top: 20px;
+}
+
+.hobby-title {
+  grid-column: 1 / span 2;
+  align-self: center;
+}
+
+.hobby-icon {
+  grid-column: 3 / span 2;
+  align-self: center;
+}
+
+.ic-megaphone {
+  border: 1px solid dodgerblue;
+  border-radius: 50%;
+  font-size: 15px;
+  color: dodgerblue;
+  padding: 15px;
+  height: 18px;
+  text-align: center;
+}
+
+.ic-hotairballoon {
+  border: 1px solid dodgerblue;
+  border-radius: 50%;
+  font-size: 15px;
+  color: dodgerblue;
+  padding: 18px;
+  text-align: center;
+  width: 13px;
+  height: 13px;
+}
+
+.ic-strategy {
+  border: 1px solid dodgerblue;
+  border-radius: 50%;
+  font-size: 15px;
+  color: dodgerblue;
+  padding: 15px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+}
+
+.ic-basket {
+  border: 1px solid dodgerblue;
+  border-radius: 50%;
+  font-size: 15px;
+  color: dodgerblue;
+  padding: 15px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+}
+
+.job-item-container-3 span {
+  font-size: 12px;
+}
+
+/* Ngôn ngữ  */
+.job-item-container-4-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  justify-items: start;
+  align-items: start;
+  border: 2px solid #eeeded;
+  padding: 0 20px;
+  padding-top: 20px;
+  row-gap: 20px;
+}
+
+.lang-1 {
+  grid-column: 1 / span 2;
+  justify-self: start;
+}
+
+.lang-2 {
+  grid-column: 1 / span 2;
+}
+
+.job-item-container-4 span {
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  margin-right: 10px;
+}
+
+.blue {
+  background: #199cdb;
+}
+
+.grey {
+  background: lightgray;
+}
+
+/* Kỹ năng  */
+.job-item-container-5-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  border: 2px solid #eeeded;
+  justify-items: start;
+  align-items: center;
+  row-gap: 20px;
+  padding: 20px 39px 0 39px;
+}
+
+.job-item-container-5 span {
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  margin-right: 10px;
+}
+
+.skill-1,
+.skill-2,
+.skill-3,
+.skill-4 {
+  grid-column: 1 / span 2;
+}
+
+/* Chứng chỉ  */
+.certificate-container h2 {
+  text-transform: uppercase;
+}
+
+.certificate-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr 2fr;
+  row-gap: 70px;
+  column-gap: 50px;
+  align-items: center;
+  justify-items: start;
+  background-color: #f7f7f7;
+  padding: 50px;
+}
+
+.certificate-title {
+  grid-column: 1 / span 2;
+}
+
+.cert {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.WEB-cert,
+.Pyt-cert {
+  border-bottom: 2px solid #d6c08d;
+}
+
+.Pyt-cert {
+  position: relative;
+}
+
+.Pyt-cert::before {
+  content: "";
+  position: absolute;
+  border-left: 2px solid #d6c08d;
+  left: -50px;
+  top: 0;
+  bottom: 0;
+}
+
+/* Dự án  */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 150px;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+}
+
+.project-title {
+  grid-column: 1 / span 2;
+  justify-self: start;
+  margin: 50px;
+}
+
+.project-container i {
+  font-style: normal;
+}
+
+.blue-background {
+  color: white;
+  border: 1px solid dodgerblue;
+  border-radius: 50%;
+  background-color: dodgerblue;
+  padding: 5px;
+  width: 35px;
+}
+
+/* Columns */
+.column-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid lightgray;
+  margin-bottom: 10px;
+}
+
+.icon-flex-container {
+  display: flex;
+  gap: 40px;
+}
+
+.CV-column-1 {
+  padding-right: 20px;
+  width: 25%;
+}
+
+.column-container img,
+.column-container a,
+.column-container td,
+.icon-flex-container {
+  padding: 10px;
+  border-bottom: 2px solid lightgray;
+}
+
+.column-container img {
+  width: 100%;
+  height: 100%;
+  max-height: 234px;
+  max-width: 450px;
+  padding: 0;
+}
+
+.column-container td {
+  max-width: 307px;
+}
+
+.column-container a {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 25px;
+  display: block;
+  text-decoration: none;
+}
+
+.column-container .công-nghệ {
+  border-bottom: none;
+}
+
+/* Footer  */
+.footer-container {
+  padding-top: 10px;
+}
+
+.footer-list {
+  list-style-type: none;
+  text-align: center;
+}
+
+.footer-list a,
+.footer-list i {
+  font-size: 30px;
+}
+
+.footer-container li {
+  display: inline-block;
+}
+
+.Facebook-link {
+  margin-right: 80px;
+}
+
+.Github-link {
+  margin-left: 80px;
+}
+
+.icon-facebook {
+  color: white;
+  border: 1px solid dodgerblue;
+  border-radius: 50%;
+  background-color: dodgerblue;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+
+.icon-linkedin {
+  color: white;
+  border: 1px solid dodgerblue;
+  border-radius: 50%;
+  background-color: dodgerblue;
+  text-align: center;
+  padding: 5px 2px 5px 2px;
+}
+
+.icon-github-circled {
+  color: dodgerblue;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.footer-list {
+  text-align: center;
+}
+
+.footer-list .Github-link i {
+  font-size: 50px;
+}
+
+.footer-list i {
+  vertical-align: middle;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+.footer-list a:hover {
+  cursor: pointer;
+}
+
+.footer-list a:active {
+  color: chartreuse;
+}
+
+.footer-list a:visited {
+  color: purple;
+}
+
+/* Assignment 3 */
+
+.hide {
+  display: none;
+}
+
+label {
+  font-size: 13px;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.submit {
+  margin-top: 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: #199cdb;
+  border-color: #199cdb;
+}
+
+input[type="email"] {
+  width: 90%;
+}
+
+input[type="email"]:focus {
+  outline: 2px solid #199cdb;
+}
